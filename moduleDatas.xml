@@ -1,0 +1,45 @@
+﻿<Window x:Class="myProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:myProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="305" Width="671">
+    <Grid Background="#FFB8AEAE">
+        <GroupBox Header="Module Informations" HorizontalAlignment="Left" Height="246" Margin="10,10,0,0" VerticalAlignment="Top" Width="315" FontWeight="Bold">
+            <Grid HorizontalAlignment="Left" Height="212" Margin="10,10,0,0" VerticalAlignment="Top" Width="292">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="209*"/>
+                    <ColumnDefinition Width="83*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Code" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0"/>
+                <TextBox x:Name="code_mod" HorizontalAlignment="Left" Height="23" Margin="135,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2"/>
+                <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,62,0,0"/>
+                <TextBox x:Name="name_mod" HorizontalAlignment="Left" Height="23" Margin="135,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2"/>
+                <Label Content="Number of credits" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0"/>
+                <TextBox x:Name="credit_mod" HorizontalAlignment="Left" Height="23" Margin="135,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2"/>
+                <Label Content="Class hour per Weeks" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,157,0,0"/>
+                <TextBox x:Name="class_HW" HorizontalAlignment="Left" Height="23" Margin="135,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Semester Infos" HorizontalAlignment="Left" Height="246" Margin="330,10,0,0" VerticalAlignment="Top" Width="315" FontWeight="Bold">
+            <Grid HorizontalAlignment="Left" Height="166" Margin="10,10,0,0" VerticalAlignment="Top" Width="292">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="209*"/>
+                    <ColumnDefinition Width="83*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Number of weeks" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="sem_number_Weeks" HorizontalAlignment="Left" Height="23" Margin="135,3,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2"/>
+                <Label Content="Start date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,38,0,0"/>
+                <Button Content="Display all" HorizontalAlignment="Left" Margin="135,146,0,0" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+                <Button Content="Exit" HorizontalAlignment="Left" Margin="0,175,-2,-39" VerticalAlignment="Top" Width="294" Click="Button_Click" Grid.ColumnSpan="2" Height="30"/>
+                <DatePicker x:Name="sem_start_Date" HorizontalAlignment="Left" Margin="135,40,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="147"/>
+                <Label Content="Hour spend" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,72,0,0"/>
+                <TextBox x:Name="hour_Spend" HorizontalAlignment="Left" Height="23" Margin="135,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2"/>
+                <Button Content="Add Modules" HorizontalAlignment="Left" Margin="135,111,0,0" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2" Click="Button_Click"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
